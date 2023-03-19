@@ -1,0 +1,117 @@
+
+body {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 300px;
+    /* background: linear-gradient(0deg, rgba(34,193,195,7) 10%, rgba(92,104,135,0.5599033558735995) 100%); */
+    background: radial-gradient(circle, rgba(238,175,174,1) 74%, rgba(75,73,90,1) 100%);
+
+
+  }
+
+
+
+  /* .........eto moya pervaya Boks s keyfreams  */
+  .box {
+    width: 100px;
+    height: 100px;
+    background: rgb(5, 1, 31);
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: rgb(50, 186, 26);
+    text-align: center;
+    animation: slide-in 1000ms;
+    animation-iteration-count: 3;
+  }
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  
+/* ....................eto moya vtoroy boks1 s keyfreams */
+  .box1{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background: slateblue;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    animation: drop-in 1000ms;
+  }
+
+
+  @keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
+/*----------------------.eto moya vtoroy boks2 s keyfreams ----------*/
+
+
+  .box2{
+    width: 100px;
+    height: 100px;
+    background: rgb(112, 111, 119);
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    animation: slide-in 1000ms;
+    animation-timing-function: linear;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+/*--------------------------.eto moya vtoroy boks3 s keyfreams ----------*/
+ 
+.box3{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    padding: 8px;
+    background: rgb(176, 160, 33);
+    animation: grow-and-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes grow-and-shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+ 

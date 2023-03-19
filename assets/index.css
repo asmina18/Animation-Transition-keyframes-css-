@@ -1,0 +1,103 @@
+*{ 
+    
+    margin: 0;
+    padding:0;
+    
+}
+  
+body{
+   box-sizing: border-box;
+    max-width: 100%;
+    background-image: url(img/pexels-pixabay-276452.jpg);
+    animation: codeImg 30s linear infinite; 
+   
+   
+
+   
+}
+/*...............ETO MOY @Keyfreams s img =eto  kod delaet tak chto bi levo i na pravo poshlo tvoy img*/
+@keyframes codeImg{
+    
+
+    0%{
+        background-position: 0% ;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 20% 0%;
+    } 
+}
+
+/*  eto moy na h1  @Keyfreams  animation*/
+
+ h1{
+
+    
+    font-size: 30px;
+    text-align: center;
+    color: rgb(243, 233, 233);
+    text-transform:uppercase;
+    animation-name: h1;
+
+    animation-duration: 400ms;
+    animation-iteration-count:1 ;
+    animation-duration: 1;
+    animation-iteration-count:1 ;
+    transition: 0.3s;
+   
+   
+}
+
+@keyframes h1{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0px);
+
+    }
+    
+}
+
+.pop{
+    
+    margin-left: 5%;
+    padding: 2px;
+   
+    display:inline-flex;
+    color: #1e680b;
+    font-size: 3rem;
+    width: 80px;
+    height: 100px;
+    
+}
+.pop:hover{
+    /* background-color: #090909; */
+    color: aliceblue;
+    animation-name: popOn;
+    animation-duration: 300ms;
+    animation-fill-mode:both;
+    animation-timing-function:unset;
+    
+   
+}
+
+@keyframes popOn{
+    from{
+      transform: scale(110% 0%);
+    }
+    to{
+      transform: scale(110% 0%);
+    }
+    
+    }
+
+
+
+
+
+
+
+
